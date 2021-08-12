@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Simple Bookmark</title>
+  </head>
+  <body class="h-64 bg-gradient-to-r from-blue-600 to-blue-700">
+    <div class="container m-auto">
+      <h1 class="text-4xl text-center my-8 text-white">Simple Bookmark</h1>
+
+      <form class="flex mx-10 lg:mx-80 md:mx-36 bookmark-form">
+        <input
+          type="text"
+          class="block w-full px-4 py-3 rounded-l-lg outline-none"
+        />
+        <button
+          type="submit"
+          class="
+            bg-red-500
+            px-4
+            py-3
+            rounded-r-lg
+            text-indigo-100
+            floater-bottom
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </form>
+
+      <!-- blog post card -->
+      <div
+        class="
+          px-3
+          grid grid-cols-2
+          md:grid-cols-3
+          lg:grid-cols-5
+          gap-4
+          lg:pt-16
+          pt-8
+          bookmark-list
+          content
+        "
+      ></div>
+    </div>
+    <!-- footer -->
+    <div class="footer mt-40">
+      <h3 class="text-center text-lg text-white">
+        Design and Developed By
+        <a href="http://raqibnur.com" class="text-red-500">Raqinur</a>
+      </h3>
+    </div>
+
+    <script src="indext.js"></script>
+  </body>
+</html>
