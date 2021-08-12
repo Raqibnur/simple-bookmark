@@ -21,7 +21,6 @@
         fetch(`${apiUrl}/${url}?app_id=${appId}`)
           .then((response) => response.json())
           .then((data) => {
-            console.log(data);
             //add a new bookmark to the bookmarks
             const bookmark = {
               title: data.hybridGraph.title,
